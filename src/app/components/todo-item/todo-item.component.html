@@ -1,0 +1,10 @@
+<div [ngClass]="setclasses()">
+  <ul class="list-grop">
+    <li class="list-group-item">
+        <input class="checkbox" (change)="onToggle(todoItem)" type="checkbox">
+        {{todoItem.title}}
+        <button class="btn btn-danger sizeBut" (click)="onDelete(todoItem)">X</button>
+    </li>
+  </ul>
+  
+</div>
